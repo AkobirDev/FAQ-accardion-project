@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(171, 234, 245);
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 50px;
+  text-align: center;
+}
+.accardion {
+  max-width: 500px;
+}
+.accardion-item {
+  margin: 20px;
+}
+.accardion-title {
+  position: relative;
+  background-color: rgb(87, 128, 240);
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.accardion-text {
+  position: relative;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  transition: all 0.5s ease;
+}
+.accardion-title::before {
+  position: absolute;
+  content: "+";
+  right: 30px;
+}
+
+.active .accardion-text {
+  height: 100px;
+  padding: 15px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+.active .accardion-title::before {
+  content: "-";
+}
+/*
+h1{
+    margin: 50px 30px;
+    text-align: center;
+}
+.faq-container{
+    max-width:600px;
+    margin: 0 auto;
+}
+.faq{
+    background-color: transparent;
+    border: 1px solid rgb(105, 105, 105);
+    margin: 30px 0;
+    border-radius: 8px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5 ease;
+}
+
+
+
+.faq-title{
+    margin: 0 30px 0 0;
+}
+.faq-text{
+    display: none; 
+    margin: 30px 0;
+    transition: .5 ease;
+}
+.active > .faq-text{
+    display: block;
+}
+.faq-toggle{
+    display: flex;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    color: #000;
+}
+.bi-x{
+    display: none;
+}
+.faq.active .bi-x{
+    display: block;
+    border-radius: 50%;
+    
+}
+.faq.active .bi-chevron-down{
+    display: none;
+} */
